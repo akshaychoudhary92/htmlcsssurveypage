@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: teal;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: rgba(27, 27, 50, 0.8);
+    margin-left: 50vh;
+    margin-right: 50vh;
+}
+
+.paragraph {
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nametext {
+    border-radius: 10px;
+    margin: -20px 20px 15px 27px;
+    padding: 15px;
+}
