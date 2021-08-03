@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="index.css">
   <title>Survey Page</title>
 </head>
-<body>
+<body id="hero">
   <div class="textcontainer">
 <h4 class="surveytext">FreeCodeCamp Survey Form</h4>
 <p class="thankyoutext">Thank you for taking the time to help us improve the platform!</p>
@@ -22,21 +22,46 @@
   <p class="paragraph"><strong>Which option best describes your current role?</strong> </p>
   <label for="roles"></label>
   <select class="nametext" name="roles" id="role">
-    <option value="" disabled selected hidden>Select current role</option>
-    <option value="student">Student</option>
-    <option value="full time job">Full Time Job</option>
-    <option value="full time learner">Full Time Learner</option>
-    <option value="prefer not to say">Prefer Not To Say</option>
-    <option value="other">Other</option>
+    <option class="options" value="" disabled selected hidden>Select current role</option>
+    <option class="options" value="student">Student</option>
+    <option class="options" value="full time job">Full Time Job</option>
+    <option class="options" value="full time learner">Full Time Learner</option>
+    <option class="options" value="prefer not to say">Prefer Not To Say</option>
+    <option class="options" value="other">Other</option>
   </select>
   <p class="paragraph"><strong>Would you recomment freecodecamp to a friend?</strong></p>
-  <input class="nametext" type="text" placeholder="Enter your name">
-  <p class="paragraph"><strong>what is you favorite feature of freecodecamp?</strong></p>
-  <input class="nametext" type="text" placeholder="Enter your name">
+  <div class="radiobuttonsdiv">
+  <label>
+    <input class="radiobuttons" type="radio" name="foo" >Definitely</label>
+    <label><input class="radiobuttons" type="radio" name="foo">Maybe</label>
+    <label><input class="radiobuttons" type="radio" name="foo">Not sure</label>
+  </div>
+  <p class="paragraph"><strong>What is you favorite feature of freecodecamp?</strong></p>
+  <label for="fav"></label>
+  <select class="nametext" name="roles" id="role">
+    <option class="options" value="" disabled selected hidden>Select an option</option>
+    <option class="options" value="student">Challenges</option>
+    <option class="options" value="full time job">Projects</option>
+    <option class="options" value="full time learner">Community</option>
+    <option class="options" value="prefer not to say">Open Source</option></select>
+
   <p class="paragraph"><strong>What would you like to see improved? (Check all that apply)</strong></p>
-  <input class="nametext" type="text" placeholder="Enter your name">
-  <p class="paragraph"><strong>Any comments or suggestions?</strong></p>
-  <input class="nametext" type="text" placeholder="Enter your name">
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Front-end projects</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Back-end projects</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Data Visualization</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Challenges</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Open source Community</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Gitter Help Rooms</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Videos</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>City Meetups</label>
+      <label  class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Wiki</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Forum</label>
+      <label class="checklabels"><input class="radiobuttonscheck" type="checkbox" name="improve" checked>Additional Courses</label>
+
+  <p class="textsuggest"><strong>Any comments or suggestions?</strong></p>
+  <textarea class="suggestions" rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+  <button class="submitbutton" type="submit" form="form1" value="Submit">Submit</button>
+
 </div>
 </body>
 </html>
